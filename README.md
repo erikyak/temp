@@ -28,10 +28,10 @@
 function ResreGraph(dist[][]):
     for each i ∈ V:
         for each j ∈ V, j > i:
-            flag ← true
+            flag = true
             for each k ∈ V, k ≠ i and k ≠ j:
                 if dist[i][j] == dist[i][k] + dist[k][j]:
-                    flag ← false
+                    flag = false
                     break
             if flag:
                 // ребро (i, j) неразложимое
